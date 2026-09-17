@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clock_formats">
+        <item>12 Hour (hh:mm)</item>
+        <item>24 Hour (HH:mm)</item>
+        <item>12 Hour with Seconds (hh:mm:ss)</item>
+        <item>24 Hour with Seconds (HH:mm:ss)</item>
+    </string-array>
+    <string-array name="clock_formats_values">
+        <item>hh:mm</item>
+        <item>HH:mm</item>
+        <item>hh:mm:ss</item>
+        <item>HH:mm:ss</item>
+    </string-array>
+
+    <string-array name="theme_modes">
+        <item>Follow System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="theme_modes_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <string-array name="icon_packs">
+        <item>Default System Icons</item>
+        <item>Sleek Minimal Pack</item>
+        <item>Ultra Neon Pack</item>
+        <item>Glassmorphism Pack</item>
+    </string-array>
+    <string-array name="icon_packs_values">
+        <item>default</item>
+        <item>minimal</item>
+        <item>neon</item>
+        <item>glass</item>
+    </string-array>
+
+    <string-array name="date_formats">
+        <item>Default (Monday, Jan 01)</item>
+        <item>Short (Mon, Jan 01)</item>
+        <item>Numeric (01/01/2026)</item>
+        <item>Detailed (Jan 01, 2026)</item>
+    </string-array>
+    <string-array name="date_formats_values">
+        <item>EEEE, MMMM dd</item>
+        <item>EEE, MMM dd</item>
+        <item>dd/MM/yyyy</item>
+        <item>MMMM dd, yyyy</item>
+    </string-array>
+
+    <string-array name="font_styles">
+        <item>Default Sans</item>
+        <item>Serif (Elegant)</item>
+        <item>Monospace (Tech)</item>
+        <item>Condensed</item>
+    </string-array>
+    <string-array name="font_styles_values">
+        <item>sans-serif</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>sans-serif-condensed</item>
+    </string-array>
+
+    <string-array name="search_styles">
+        <item>Pill (Modern)</item>
+        <item>Rounded Rectangle</item>
+        <item>Minimal (No Background)</item>
+        <item>Hidden</item>
+    </string-array>
+    <string-array name="search_styles_values">
+        <item>pill</item>
+        <item>rectangle</item>
+        <item>minimal</item>
+        <item>hidden</item>
+    </string-array>
+
+    <string-array name="accent_colors">
+        <item>Wallpaper (Material You)</item>
+        <item>Ultra Blue</item>
+        <item>Sleek Red</item>
+        <item>Emerald Green</item>
+        <item>Royal Purple</item>
+        <item>Amber Gold</item>
+    </string-array>
+    <string-array name="accent_colors_values">
+        <item>dynamic</item>
+        <item>#FF007AFF</item>
+        <item>#FFFF3B30</item>
+        <item>#FF34C759</item>
+        <item>#FFAF52DE</item>
+        <item>#FFFF9500</item>
+    </string-array>
+
+    <string-array name="dock_styles">
+        <item>Glass Card</item>
+        <item>Solid Surface</item>
+        <item>Transparent</item>
+        <item>Floating Pill</item>
+    </string-array>
+    <string-array name="dock_styles_values">
+        <item>glass</item>
+        <item>solid</item>
+        <item>transparent</item>
+        <item>pill</item>
+    </string-array>
+
+    <string-array name="animations">
+        <item>Slide Up (Classic)</item>
+        <item>Zoom (Modern)</item>
+        <item>Fade</item>
+        <item>None (Fast)</item>
+    </string-array>
+    <string-array name="animations_values">
+        <item>slide_up</item>
+        <item>zoom</item>
+        <item>fade</item>
+        <item>none</item>
+    </string-array>
+</resources>

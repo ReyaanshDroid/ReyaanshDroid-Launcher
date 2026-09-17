@@ -1,0 +1,287 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Desktop & Home Screen -->
+    <PreferenceCategory app:title="Desktop &amp; Home Screen">
+        <SwitchPreferenceCompat
+            android:key="clean_mode"
+            android:title="Clean Home Mode"
+            android:summary="Hide all widgets for a minimalist look"
+            android:defaultValue="false" />
+
+        <SeekBarPreference
+            android:key="home_grid_columns"
+            android:title="Home Grid Columns"
+            android:defaultValue="4"
+            android:max="6"
+            app:min="3"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="home_grid_rows"
+            android:title="Home Grid Rows"
+            android:defaultValue="5"
+            android:max="8"
+            app:min="3"
+            app:showSeekBarValue="true" />
+
+        <ListPreference
+            android:key="home_search_style"
+            android:title="Home Search Bar Style"
+            android:entries="@array/search_styles"
+            android:entryValues="@array/search_styles_values"
+            android:defaultValue="pill" />
+
+        <SwitchPreferenceCompat
+            android:key="show_voice_search"
+            android:title="Enable Voice Search"
+            android:summary="Show microphone icon in search bars"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="lock_desktop"
+            android:title="Lock Desktop"
+            android:summary="Prevent moving icons or widgets"
+            android:defaultValue="false" />
+
+        <SeekBarPreference
+            android:key="home_margin_top"
+            android:title="Top Margin (dp)"
+            android:defaultValue="40"
+            android:max="100"
+            app:min="0"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+    <!-- Dock Configuration -->
+    <PreferenceCategory app:title="Dock Configuration">
+        <SwitchPreferenceCompat
+            android:key="show_dock"
+            android:title="Enable Dock"
+            android:summary="Show pinned apps bar at the bottom"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="dock_style"
+            android:title="Dock Appearance"
+            android:entries="@array/dock_styles"
+            android:entryValues="@array/dock_styles_values"
+            android:defaultValue="glass" />
+
+        <SeekBarPreference
+            android:key="dock_count"
+            android:title="Dock App Count"
+            android:defaultValue="5"
+            android:max="6"
+            app:min="2"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="dock_padding"
+            android:title="Dock Bottom Padding (dp)"
+            android:defaultValue="16"
+            android:max="60"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="dock_labels"
+            android:title="Show Dock Labels"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <!-- App Drawer -->
+    <PreferenceCategory app:title="App Drawer">
+        <SeekBarPreference
+            android:key="drawer_grid_columns"
+            android:title="Drawer Columns"
+            android:defaultValue="4"
+            android:max="7"
+            app:min="3"
+            app:showSeekBarValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_search"
+            android:title="Show Search in Drawer"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_frequent_apps"
+            android:title="Show Frequent Apps"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_category_tabs"
+            android:title="Show Categories (All, Games, etc.)"
+            android:defaultValue="true" />
+
+        <SeekBarPreference
+            android:key="drawer_blur"
+            android:title="Drawer Blur Intensity"
+            android:defaultValue="50"
+            android:max="100"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="drawer_opacity"
+            android:title="Drawer Overlay Opacity"
+            android:defaultValue="80"
+            android:max="100"
+            app:min="0"
+            app:showSeekBarValue="true" />
+
+        <ListPreference
+            android:key="drawer_opening_animation"
+            android:title="Opening Animation"
+            android:entries="@array/animations"
+            android:entryValues="@array/animations_values"
+            android:defaultValue="slide_up" />
+    </PreferenceCategory>
+
+    <!-- Icons & Typography -->
+    <PreferenceCategory app:title="Icons &amp; Typography">
+        <ListPreference
+            android:key="icon_pack"
+            android:title="Icon Style / Framework"
+            android:entries="@array/icon_packs"
+            android:entryValues="@array/icon_packs_values"
+            android:defaultValue="default" />
+
+        <SeekBarPreference
+            android:key="icon_size"
+            android:title="Icon Size (%)"
+            android:defaultValue="100"
+            android:max="150"
+            app:min="50"
+            app:showSeekBarValue="true" />
+
+        <ListPreference
+            android:key="app_font"
+            android:title="UI Font Style"
+            android:entries="@array/font_styles"
+            android:entryValues="@array/font_styles_values"
+            android:defaultValue="sans-serif" />
+
+        <SwitchPreferenceCompat
+            android:key="show_labels"
+            android:title="Show App Labels"
+            android:defaultValue="true" />
+
+        <SeekBarPreference
+            android:key="label_size"
+            android:title="Label Text Size (sp)"
+            android:defaultValue="12"
+            android:max="18"
+            app:min="8"
+            app:showSeekBarValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="single_line_labels"
+            android:title="Single Line Labels"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <!-- Widgets & Info -->
+    <PreferenceCategory app:title="Widgets &amp; Info">
+        <ListPreference
+            android:key="clock_format"
+            android:title="Clock Format"
+            android:entries="@array/clock_formats"
+            android:entryValues="@array/clock_formats_values"
+            android:defaultValue="hh:mm" />
+
+        <ListPreference
+            android:key="date_format"
+            android:title="Date Format"
+            android:entries="@array/date_formats"
+            android:entryValues="@array/date_formats_values"
+            android:defaultValue="EEEE, MMMM dd" />
+
+        <SwitchPreferenceCompat
+            android:key="show_battery_health"
+            android:title="Show Battery Health Info"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_weather"
+            android:title="Show Weather Info (Simulated)"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_system_hub"
+            android:title="Show System Monitor (RAM/Storage)"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_media_widget"
+            android:title="Show Smart Media Widget"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="media_widget_blur"
+            android:title="Glass Media Widget"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <!-- Gestures & System -->
+    <PreferenceCategory app:title="Gestures &amp; System">
+        <SwitchPreferenceCompat
+            android:key="swipe_down_notifications"
+            android:title="Swipe Down for Notifications"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="force_edge_to_edge"
+            android:title="Force Immersive Edge-to-Edge"
+            android:summary="Extends content behind system bars"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="vibration_feedback"
+            android:title="Vibration Feedback"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <!-- Theme & Colors -->
+    <PreferenceCategory app:title="Theme &amp; Colors">
+        <ListPreference
+            android:key="theme_mode"
+            android:title="Theme Mode (Dark/Light)"
+            android:entries="@array/theme_modes"
+            android:entryValues="@array/theme_modes_values"
+            android:defaultValue="system" />
+
+        <SeekBarPreference
+            android:key="ui_corner_radius"
+            android:title="UI Corner Radius (dp)"
+            android:defaultValue="24"
+            android:max="40"
+            app:min="0"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+    <!-- Advanced & Misc -->
+    <PreferenceCategory app:title="Advanced &amp; Misc">
+        <Preference
+            android:title="Launcher Version"
+            android:summary="v1.0.0-ULTRA-ROM" />
+
+        <SwitchPreferenceCompat
+            android:key="low_ram_mode"
+            android:title="Low RAM Optimization"
+            android:summary="Reduce animations and background tasks"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="enable_debug_logs"
+            android:title="Enable Debug Logs"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="reset_settings"
+            android:title="Reset All Settings"
+            android:summary="Restore factory ROM defaults" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

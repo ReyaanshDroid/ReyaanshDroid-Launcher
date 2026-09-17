@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ReyaanshDroidLauncher" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="Theme.ReyaanshDroidLauncher" parent="Base.Theme.ReyaanshDroidLauncher" />
+
+    <style name="Theme.LauncherSettings" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">?attr/colorPrimary</item>
+    </style>
+</resources>
